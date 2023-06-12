@@ -20,4 +20,7 @@ use App\Http\Controllers\BookController;
 
 // Mostra o controller e o Metodo que vem depois do @
 // Metodo do Video
-Route::get('/', 'BookController@index');
+// Route::get('/', 'BookController@index');
+
+// Esse Metodo Alternativo Funciona Perfeitamente Usando o 'use'
+Route::get('/', [BookController::class, 'index']);
