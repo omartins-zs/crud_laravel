@@ -22,5 +22,8 @@ use App\Http\Controllers\BookController;
 // Metodo do Video
 // Route::get('/', 'BookController@index');
 
+// Usando o metodo do Video mas passando Caminho Inteiro
+Route::get('/', 'App\Http\Controllers\BookController@index');
+
 // Esse Metodo Alternativo Funciona Perfeitamente Usando o 'use'
-Route::get('/', [BookController::class, 'index']);
+// Route::get('/', [BookController::class, 'index']);
