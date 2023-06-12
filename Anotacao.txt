@@ -5,3 +5,5 @@ Iniciando Projeto CRUD com Laravel
 Laravel https://laravel.com/docs/10.x
 
 composer https://getcomposer.org/download/
+
+XAMPP https://www.apachefriends.org/pt_br/download.html
