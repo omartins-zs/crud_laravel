@@ -41,7 +41,7 @@
                                 <button class="btn btn-primary">Editar</button>
                             </a>
 
-                            <a href="">
+                            <a href="{{ url("books/$books->id") }}" class="js-del">
                                 <button class="btn btn-danger">Deletar</button>
                             </a>
                         </td>
