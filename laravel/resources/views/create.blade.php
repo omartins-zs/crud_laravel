@@ -5,6 +5,15 @@
     <hr>
 
     <div class="col-8 m-auto">
+
+        @if (isset($errors) && count($errors) > 0)
+            <div class="text-center mt-4 mb-4 p-2 alert-danger">
+                @foreach ($errors->all() as $erro)
+                    {{ $erro }}<br>
+                @endforeach
+            </div>
+        @endif
+
         <form name="formCad" id="formCad" method="post" action="{{ url('books') }}">
             @csrf
             <input class="form-control" type="text" name="title" id="title" placeholder="Título:" required><br>
