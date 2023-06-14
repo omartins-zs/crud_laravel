@@ -9,6 +9,8 @@ class ModelBook extends Model
 {
     use HasFactory;
     protected $table = 'book';
+    protected $fillable = ['title', 'id_user', 'pages', 'price'];
+
 
     public function relUsers()
     {
