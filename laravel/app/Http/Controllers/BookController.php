@@ -77,7 +77,9 @@ class BookController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $book = $this->objBook->find($id);
+        $users = $this->objUser->all();
+        return view('create', compact('book', 'users'));
     }
 
     /**
