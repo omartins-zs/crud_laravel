@@ -11,3 +11,42 @@ XAMPP https://www.apachefriends.org/pt_br/download.html
 composer create-project --prefer-dist laravel/laravel
 
 php artisan
+
+Documentaçao LARAVEL https://laravel.com/docs/10.x
+https://getbootstrap.com/docs/4.6/getting-started/introduction/
+php artisan make:controller BookController --resource
+Bootstrap
+Error “Target class controller does not exist” when using Laravel 8  https://stackoverflow.com/questions/63807930/error-target-class-controller-does-not-exist-when-using-laravel-8
+
+
+Cria o model e migration : php artisan make:model Models\\ModelBook -m
+
+Cria as Tabela: php artisan migrate
+
+
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES ('1', 'Lucas', 'lucas@email.com', '2023-06-12 15:04:54', '123456', '654321', '2023-06-12 15:04:54', '2023-06-12 15:04:54')
+
+INSERT INTO `book` (`id`, `id_user`, `title`, `pages`, `price`, `created_at`, `updated_at`) VALUES ('1', '1', 'O senhor dos aneis', '200', '99.99', '2023-06-12 15:19:10', '2023-06-12 15:19:10')
+
+
+Cria Requisiçoe sPersonalizadas php artisan make:request BookRequest
+Form Request Validation https://laravel.com/docs/10.x/validation#form-request-validation
+
+https://github.com/Laravel-Lang/lang
+
+
+https://github.com/Oliveiiraa/CRUD-Books-PHP
+https://github.com/MatheusTHM/CRUD-Laravel
+
+
+Cria o Seeder php artisan make:seeder BookSeeder
+
+Executa o Seeder php artisan db:seed
+
+
+
+Para Deploy em Hospedagem
+
+Editar o .env e public/index.php
+
+Adicionar os arquivos de public/index.php dentro de public_html
