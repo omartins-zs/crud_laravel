@@ -26,4 +26,12 @@ class BookRequest extends FormRequest
             'pages' => 'required|numeric'
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'title.required' => 'Coloque o título!',
+            'pages.numeric'  => 'Coloque números para as páginas.',
+        ];
+    }
 }
