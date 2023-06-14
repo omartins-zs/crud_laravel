@@ -19,7 +19,7 @@
                     <th scope="col">Título</th>
                     <th scope="col">Autor</th>
                     <th scope="col">Preço</th>
-                    <th scope="col">Action</th>
+                    <th scope="col">Ações</th>
                 </tr>
             </thead>
             <tbody>
@@ -50,5 +50,6 @@
                 @endforeach
             </tbody>
         </table>
+        {{ $book->links() }}
     </div>
 @endsection

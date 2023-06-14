@@ -24,7 +24,7 @@ class BookController extends Controller
         // Para ordenar de Forma crescente 
         // $book = $this->objBook->all()->sortBy('title');
 
-        $book = $this->objBook->all();
+        $book = $this->objBook->paginate(2);
         return view('index', compact('book'));
 
         // Vardump do Laravel = dd
@@ -99,7 +99,7 @@ class BookController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy($id)
     {
         $del = $this->objBook->destroy($id);
         return ($del) ? "sim" : "não";
