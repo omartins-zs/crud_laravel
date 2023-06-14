@@ -16,7 +16,23 @@ class BookController extends Controller
         $this->objUser = new User();
         $this->objBook = new ModelBook();
     }
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
 
+        // Vardump do Laravel = dd
+        dd($this->objUser);
+
+        // Detalhes em Original
+        dd($this->objUser->all());
+
+        // Relacionamentos
+        dd($this->objUser->find(1)->relBooks);
+
+        dd($this->objUser->find(1)->relUsers);
+    }
     /**
      * Show the form for creating a new resource.
      */
