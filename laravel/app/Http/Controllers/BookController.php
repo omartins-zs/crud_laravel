@@ -21,6 +21,8 @@ class BookController extends Controller
      */
     public function index()
     {
+        // Para ordenar de Forma crescente 
+        // $book = $this->objBook->all()->sortBy('title');
 
         $book = $this->objBook->all();
         return view('index', compact('book'));
@@ -55,9 +57,10 @@ class BookController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
-        //
+        $book = $this->objBook->find($id);
+        return view('show', compact('book'));
     }
 
     /**
