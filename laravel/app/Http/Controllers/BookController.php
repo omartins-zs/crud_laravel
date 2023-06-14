@@ -22,16 +22,19 @@ class BookController extends Controller
     public function index()
     {
 
+        $book = $this->objBook->all();
+        return view('index', compact('book'));
+
         // Vardump do Laravel = dd
-        dd($this->objUser);
+        // dd($this->objUser);
 
         // Detalhes em Original
-        dd($this->objUser->all());
+        // dd($this->objUser->all());
 
         // Relacionamentos
-        dd($this->objUser->find(1)->relBooks);
+        // dd($this->objUser->find(1)->relBooks);
 
-        dd($this->objUser->find(1)->relUsers);
+        // dd($this->objUser->find(1)->relUsers);
     }
     /**
      * Show the form for creating a new resource.
