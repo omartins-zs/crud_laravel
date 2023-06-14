@@ -11,6 +11,7 @@
     </div>
 
     <div class="col-8 m-auto">
+        @csrf
         <table class="table text-center">
             <thead class="thead-dark">
                 <tr>
