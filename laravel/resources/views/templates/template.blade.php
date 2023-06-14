@@ -13,6 +13,8 @@
 
 <body>
     @yield('content')
+
+    <script src="{{url("assets/js/script.js")}}">
 </body>
 
 </html>
