@@ -15,6 +15,10 @@ class UserSeeder extends Seeder
     // public function run(): void
     public function run(User $user)
     {
-        //
+        $user->create([
+            'name' => 'Gabriel Matheus',
+            'email' => 'gabrielmatheus@teste.com',
+            'password' => '12345678',
+        ]);
     }
 }
