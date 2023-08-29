@@ -7,14 +7,14 @@
     <title>Crud com Laravel</title>
 
     {{-- Bootstrap --}}
-    <link rel="stylesheet" href="{{url('assets/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url('assets/bootstrap/css/bootstrap.min.css') }}">
 
 </head>
 
 <body>
     @yield('content')
 
-    <script src="{{url("assets/js/script.js")}}">
+    <script src="{{ url('assets/js/script.js') }}"></script>
 </body>
 
 </html>
