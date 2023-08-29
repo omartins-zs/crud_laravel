@@ -50,6 +50,6 @@
                 @endforeach
             </tbody>
         </table>
-        {{ $book->links() }}
+        {{ $book->links('pagination::bootstrap-4') }}
     </div>
 @endsection
