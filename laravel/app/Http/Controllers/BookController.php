@@ -21,10 +21,14 @@ class BookController extends Controller
      */
     public function index()
     {
-        // Para ordenar de Forma crescente 
+        // Para ordenar de Forma crescente
         // $book = $this->objBook->all()->sortBy('title');
 
+        // Paginação
         $book = $this->objBook->paginate(2);
+
+        // Todos
+        // $book = $this->objBook->all();
         return view('index', compact('book'));
 
         // Vardump do Laravel = dd
