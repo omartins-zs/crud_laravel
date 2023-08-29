@@ -8,6 +8,7 @@
 
     {{-- Bootstrap --}}
     <link rel="stylesheet" href="{{ url('assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url('assets/img/favicon-32x32.png') }}">
 
 </head>
 
