@@ -38,15 +38,21 @@ https://github.com/Laravel-Lang/lang
 https://github.com/Oliveiiraa/CRUD-Books-PHP
 https://github.com/MatheusTHM/CRUD-Laravel
 
+Para popular o Banco de Dados de Maneira dinamica
 
 Cria o Seeder php artisan make:seeder BookSeeder
 
+Editar o arquivo BookSeeder da estrutura correta
+
 Executa o Seeder php artisan db:seed
-
-
 
 Para Deploy em Hospedagem
 
 Editar o .env e public/index.php
 
 Adicionar os arquivos de public/index.php dentro de public_html
+
+Para acessar e rodar o projeto entrar na pasta "Laravel"
+
+Para rodar o Projeto
+php artisan serve
