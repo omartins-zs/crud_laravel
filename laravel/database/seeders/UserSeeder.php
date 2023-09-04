@@ -20,5 +20,15 @@ class UserSeeder extends Seeder
             'email' => 'gabrielmatheus@teste.com',
             'password' => '12345678',
         ]);
+        $user->create([
+            'name' => 'Lucas Guimaraes',
+            'email' => 'lucas@teste.com',
+            'password' => '12345',
+        ]);
+        $user->create([
+            'name' => 'Fernando Saga',
+            'email' => 'fernandinhdo@teste.com',
+            'password' => '123',
+        ]);
     }
 }
