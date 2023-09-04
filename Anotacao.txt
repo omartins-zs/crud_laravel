@@ -2,6 +2,11 @@ Iniciando Projeto CRUD com Laravel
 
 
 
+Playlist do Tutorial: https://youtube.com/playlist?list=PLbnAsJ6zlidsbjXqTWQhbnKibzl69LQar&si=-XATc0d23Lci-Qd0
+
+Auxiliar: https://webdesignemfoco.com/cursos/crud/crud-com-laravel-12-laravel-com-sql-server
+
+
 Laravel https://laravel.com/docs/10.x
 
 composer https://getcomposer.org/download/
